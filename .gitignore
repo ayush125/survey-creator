@@ -3,7 +3,6 @@
 node_modules/*
 .idea
 package/*
-build/*
 tmp/*
 /src/*.js
 /tests/*.js
@@ -12,7 +11,6 @@ _site/
 .sass-cache
 docs/pmes.json
 docs/classes.json
-dist/
 /shippable
 /Properties
 /src/templateEditor.ko.html.ts
@@ -36,7 +34,6 @@ svgbundle.html
 
 doc_generator/*.json
 node_modules
-build
 package
 tmp
 package-lock.json
