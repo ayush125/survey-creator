@@ -1,12 +1,12 @@
 {
-    "name": "ayush125-survey-creator",
+    "name": "survey-creator",
     "homepage": "https://surveyjs.io/Overview/Survey-Creator",
     "license": "https://surveyjs.io/Licenses#SurveyCreator",
     "repository": {
         "type": "git",
         "url": "https://github.com/ayush125/survey-creator"
     },
-    "private": false,
+    "private": true,
     "version": "0.0.1",
     "scripts": {
         "dev": "concurrently \"npm run dev --prefix ../survey-library\" \"http-server -p 7777 --silent\" \"npm run watch:dev --prefix packages/survey-creator-core\" \"npm run watch:prod --prefix packages/survey-creator-core\" \"npm run watch:dev --prefix packages/survey-creator-knockout\" \"npm run watch:prod --prefix packages/survey-creator-knockout\" \"npm run watch:dev --prefix packages/survey-creator-react\" \"npm run watch:prod --prefix packages/survey-creator-react\" ",
