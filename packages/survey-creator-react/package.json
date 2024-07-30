@@ -1,14 +1,21 @@
 {
   "name": "survey-creator-react-ayush125",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "homepage": "https://surveyjs.io/Overview/Survey-Creator",
   "author": "Devsoft Baltic OU",
   "license": "SEE LICENSE IN LICENSE",
+  "main": "build/survey-creator-react.min.js",
+  "types": "build/survey-creator-react-ayush125.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/surveyjs/survey-creator.git"
   },
+  "keywords": [
+    "survey",
+    "react",
+    "survey-creator"
+  ],
   "scripts": {
     "start": "webpack-dev-server --env buildType=dev --open",
     "serve": "http-server --silent",
@@ -30,6 +37,7 @@
     "release": "standard-version --message \"Release: %s [azurepipelines skip]\"",
     "remove-package-lock": "rimraf package-lock.json",
     "build": "webpack --env buildType=dev && webpack --env buildType=prod",
+    "prepublishOnly": "npm run build",
     "watch:dev": "webpack --env buildType=dev --watch",
     "watch:prod": "webpack --env buildType=prod --watch",
     "lint": "eslint ./src"
@@ -84,6 +92,9 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   },
+  "files": [
+    "build"
+  ],
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
