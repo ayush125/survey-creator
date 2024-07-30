@@ -1,5 +1,5 @@
 /*!
- * SurveyJS Creator React v0.0.3
+ * SurveyJS Creator React v0.0.5
  * (c) 2015-2024 Devsoft Baltic OÜ - http://surveyjs.io/
  * Github: https://github.com/surveyjs/survey-creator
  * License: https://surveyjs.io/Licenses#SurveyCreator
@@ -2950,7 +2950,7 @@ var SurveyQuestionFileEditor = /** @class */ (function (_super) {
     };
     SurveyQuestionFileEditor.prototype.renderElement = function () {
         var _this = this;
-        return (react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", { className: this.questionFile.cssClasses.root, ref: function (el) { return _this.setContent(el); }, onDragEnter: this.questionFile.onDragEnter, onDragOver: this.questionFile.onDragOver, onDrop: this.questionFile.onDrop, onDragLeave: this.questionFile.onDragLeave, onKeyDown: function (event) { return _this.question.onKeyDown(event.nativeEvent); } },
+        return (react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", { className: this.questionFile.cssClasses.root, ref: function (el) { return _this.setControl(el); }, onDragEnter: this.questionFile.onDragEnter, onDragOver: this.questionFile.onDragOver, onDrop: this.questionFile.onDrop, onDragLeave: this.questionFile.onDragLeave, onKeyDown: function (event) { return _this.question.onKeyDown(event.nativeEvent); } },
             this.renderInput(),
             this.renderFileInput(),
             this.renderButtons()));
@@ -4903,7 +4903,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var survey_core__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! survey-core */ "survey-core");
 /* harmony import */ var survey_core__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(survey_core__WEBPACK_IMPORTED_MODULE_56__);
 var Version;
-Version = "".concat("0.0.3");
+Version = "".concat("0.0.5");
 // import "@survey/creator/survey-creator-core.css";
 
 
@@ -4969,7 +4969,7 @@ Version = "".concat("0.0.3");
 
 
 
-(0,survey_core__WEBPACK_IMPORTED_MODULE_56__.checkLibraryVersion)("".concat("0.0.3"), "survey-creator-react");
+(0,survey_core__WEBPACK_IMPORTED_MODULE_56__.checkLibraryVersion)("".concat("0.0.5"), "survey-creator-react");
 
 /******/ 	return __webpack_exports__;
 /******/ })()

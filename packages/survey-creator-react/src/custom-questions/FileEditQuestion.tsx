@@ -22,7 +22,7 @@ export class SurveyQuestionFileEditor extends SurveyQuestionText {
           ref={(input) => (this.setControl(input))}
           autoComplete="off"
           type="text"
-          onBlur={(event) => this.questionFile.onInputBlur(event.nativeEvent) }
+          onBlur={(event) => this.questionFile.onInputBlur(event.nativeEvent)}
           onChange={(event) => this.questionFile.onInputChange(event.nativeEvent)}
         />
       </>
@@ -42,7 +42,7 @@ export class SurveyQuestionFileEditor extends SurveyQuestionText {
         multiple={false} title={this.questionFile.inputTitle}
         accept={this.questionFile.acceptedTypes}
         tabIndex={-1}
-        onChange={(event) => this.questionFile.onFileInputChange(event.nativeEvent) }/>
+        onChange={(event) => this.questionFile.onFileInputChange(event.nativeEvent)} />
     );
   }
   protected renderButtons(): JSX.Element {
@@ -58,7 +58,7 @@ export class SurveyQuestionFileEditor extends SurveyQuestionText {
       <button type="button"
         className={this.questionFile.cssClasses.clearButton}
         disabled={this.questionFile.getIsClearButtonDisabled()}
-        onClick={ this.questionFile.doClean}>
+        onClick={this.questionFile.doClean}>
         <SvgIcon iconName={this.questionFile.cssClasses.clearButtonIcon} size={"auto"} title={this.questionFile.clearButtonCaption}></SvgIcon>
       </button>
     ));
@@ -80,15 +80,15 @@ export class SurveyQuestionFileEditor extends SurveyQuestionText {
     return (
       <div
         className={this.questionFile.cssClasses.root}
-        ref={el => this.setContent(el)}
+        ref={el => this.setControl(el)}
         onDragEnter={this.questionFile.onDragEnter}
         onDragOver={this.questionFile.onDragOver}
         onDrop={this.questionFile.onDrop}
         onDragLeave={this.questionFile.onDragLeave}
         onKeyDown={event => this.question.onKeyDown(event.nativeEvent)}>
-        { this.renderInput() }
-        { this.renderFileInput() }
-        { this.renderButtons() }
+        {this.renderInput()}
+        {this.renderFileInput()}
+        {this.renderButtons()}
       </div>
     );
   }
